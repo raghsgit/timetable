@@ -157,12 +157,11 @@
 		else{
 			c=8;
 		}
-		c=2;
 		return c;
 	}
 	$(document).ready(function(){
 		var d=new Date();
-		var dy=d.getDay()+4;
+		var dy=d.getDay();
 		if (dy==0){
 			$("#info").text("Sunaday is always Holiday !!");
 		}
