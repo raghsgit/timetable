@@ -197,7 +197,7 @@
 		}
 		return c;
 	}
-	$(document).ready(function(){
+	function myFunction(){
 		var d=new Date();
 		var dy=d.getDay();
 		if (dy==0){
@@ -219,6 +219,10 @@
 			$("."+cl).css({"background-color":"#922b21" ,"color":"#ccc","letter-spacing":"2px"});
 		}
 
+	}
+	$(document).ready(function(){
+		myFunction();
+		var i=setInterval(function(){myFunction();},60000);
 	});
 </script>
 </html>
