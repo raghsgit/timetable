@@ -59,7 +59,7 @@
 <body>
 	<center>
 	<div style="max-width:1200px">
-		<div id="inf" style="width:100% "><span id="info"></span><a href="cs_syllabus" download style="margin-right: 15px;float: right">View Syllabus</a></div>
+		<div id="inf" style="width:100% "><span id="info" style="font-weight: bold"></span><a href="cs_syllabus" download style="margin-right: 15px;float: right">View Syllabus</a></div>
 		<div>
 		<table id="tb1" style="width: 100%">
 			<thead>
@@ -205,17 +205,17 @@
 			$("#info").text("Sunaday is always Holiday !!");
 		}
 		else if(getPeriod()==0){
-			$("#info").text("<b>...  . Lunch time !! . ...</b>");
+			$("#info").text("...  . Lunch time !! . ...");
 		}
 		else if(getPeriod()==8){
-			$("#info").text("<b>This is not a class time !!</b>");
+			$("#info").text("This is not a class time !!");
 		}
 		else{
 			var cl="t"+dy+""+getPeriod();
 			if($("."+cl).html()!="XXXXXXX"){
-				$("#info").text("<b>Classes are running currently !!</b>");
+				$("#info").text("Classes are running currently !!");
 			}else{
-				$("#info").text("<b>This is a Free Period !!</b>");
+				$("#info").text("This is a Free Period !!");
 			}			
 			$("."+cl).css({"background-color":"#922b21" ,"color":"#ccc","letter-spacing":"2px"});
 		}
