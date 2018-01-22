@@ -167,7 +167,8 @@
 	function getPeriod(){
 		var dt= new Date();
 		var c=0;
-		var ti=parseInt(dt.getHours()+""+dt.getMinutes());
+		var ti=parseInt(dt.getHours()+""+(dt.getMinutes()<10?'0':'') + dt.getMinutes());
+
 		if(ti>=910 && ti<1000){
 			c=1;
 		}
