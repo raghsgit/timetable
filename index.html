@@ -78,9 +78,9 @@
 			<tbody>
 			<tr>
 				<td>Monday</td>
-				<td class="t11">cs-067(t1) <wbr><span>cs-210</span><br/>cs-069(t1) <wbr><span>cs-312</span></td>
-				<td class="t12">cs-067 <wbr><span>cs-210</span><br/>cs-069 <wbr><span>cs-312</span></td>
-				<td colspan="2" class="t13 t14">-----cs-603-----<br/><span>cs-210</span></td>
+				<td class="t11">cs-067(t1) <wbr><span>cs-210</span><br/>cs-069(t1) <wbr><span>Lt-15</span></td>
+				<td class="t12">cs-067 <wbr><span>cs-210</span><br/>cs-069 <wbr><span>Lt-15</span></td>
+				<td colspan="2" class="t13 t14">-----cs-603-----<br/><span>Lt-15</span></td>
 				<td id="lunch"></td>
 				<td class="t15">cs-602(t2)<br/><span>cs-210</span></td>
 				<td colspan="2" class="t16 t17">-----cs-601-----<br/><span>cs-210</span></td>
@@ -96,7 +96,7 @@
 				<td>Wednesday</td>
 				<td class="t31">cs-067(t2) <wbr><span>cs-210</span><br/>cs-069(t2) <wbr><span>cs-312</span></td>
 				<td class="t32">cs-067 <wbr><span>cs-210</span><br/>cs-069 <wbr><span>cs-312</span></td>
-				<td colspan="2" class="t33 t34">-----cs-602-----<br/><span>cs-210</span></td>
+				<td colspan="2" class="t33 t34">-----cs-602-----<br/><span>Lt-25</span></td>
 				<td id="lunch" ></td>
 				<td colspan="3" class="t35 t36 t37">cs-652<span>(cs-1)</span><br/>cs-651<span>(cs-2)</span></td>
 			</tr>
@@ -114,8 +114,8 @@
 				<td>Friday</td>
 				<td class="t51">cs-062(t1)<br/><span>cs-210</span></td>
 				<td class="t52">cs-062<br/><span>cs-210</span></td>
-				<td class="t53">cs-603<br/><span>cs-210</span></td>
-				<td class="t54">cs-603(t1)<br/><span>cs-210</span></td>
+				<td class="t53">cs-603<br/><span>Lt-15</span></td>
+				<td class="t54">cs-603(t1)<br/><span>Lt-15</span></td>
 				<td id="lunch"></td>
 				<td class="t55">cs-601<br/><span>cs-210</span></td>
 				<td class="t56">cs-601(t2)<br/><span>cs-210</span></td>
@@ -124,8 +124,8 @@
 			<tr>
 				<td>Saturday</td>
 				<td colspan="2" class="t61 t62">-----HU-601-----<br/><span>cs-210</span></td>
-				<td class="t63">cs-062(t2)<br/><span>cs-210</span></td>
-				<td class="t64">cs-601(t2)<br/><span>cs-210</span></td>
+				<td class="t63">cs-062(t2)<br/><span>Lt-14</span></td>
+				<td class="t64">cs-601(t2)<br/><span>Lt-14</span></td>
 				<td id="lunch"></td>
 				<td colspan="3" class="t65 t66 t67" id="holi">XXXXXXX</td>
 			</tr>
@@ -205,17 +205,17 @@
 			$("#info").text("Sunaday is always Holiday !!");
 		}
 		else if(getPeriod()==0){
-			$("#info").text("Lunch time !!");
+			$("#info").text("<b>...  . Lunch time !! . ...</b>");
 		}
 		else if(getPeriod()==8){
-			$("#info").text("This is not a class time !!");
+			$("#info").text("<b>This is not a class time !!</b>");
 		}
 		else{
 			var cl="t"+dy+""+getPeriod();
 			if($("."+cl).html()!="XXXXXXX"){
-				$("#info").text("Classes are running currently !!");
+				$("#info").text("<b>Classes are running currently !!</b>");
 			}else{
-				$("#info").text("This is a Free Period !!");
+				$("#info").text("<b>This is a Free Period !!</b>");
 			}			
 			$("."+cl).css({"background-color":"#922b21" ,"color":"#ccc","letter-spacing":"2px"});
 		}
