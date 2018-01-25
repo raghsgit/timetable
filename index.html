@@ -7,15 +7,6 @@
 	<script type="text/javascript" src="jquery.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
 	<style>
-html {
-    height: 100%;
-}
-body {
-    height: 100%;
-    margin: 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
 	*{
 		font-family: 'Roboto', sans-serif;
 	}
@@ -229,7 +220,7 @@ border-top:2px solid #2ecc71;
 		var dy=d.getDay();
 		$(".t"+dy).css({"background-color":"#42A5F5" ,"color":"#ccc"});		
 		if(d.getDate()==26 && d.getMonth()==0){
-			$("body").css({"background":" linear-gradient( #FF9933 , #fff, #138808)"});
+			$("html").css({"background":" linear-gradient( #FF9933 , #fff, #138808)"});
 			$("#rd").css({"padding-bottom":"50px","padding-top":"50px" });
 			$("#info").html("<font color=#FF9933>HAPPY</font><font color='#fff'> REPUBLIC</font><font color='#138808'> DAY !!!!</font>");
 			$("#rd").html('<a href="" style="color:white;font-size:3em;font-weight:bold;" class="typewrite" data-period="2000" data-type=\'[ "Happy Republic Day.", " 26 January.", "69<sup>th</sup> Republic Day ."]\'><span class="wrap"></span></a><br/><br/>');
