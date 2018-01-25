@@ -72,7 +72,7 @@ border-top:2px solid #2ecc71;
 	<div style="max-width:1200px">
 		<div id ="rd" style="width:100%"></div>
 		<div id="inf" style="width:100% "><span id="info" style="font-weight: bold"></span><a href="cs_syllabus" download style="margin-right: 15px;float: right">View Syllabus</a></div>
-		<div>
+		<div style="width: 100%">
 		<table id="tb1" style="width: 100%">
 			<thead>
 			<tr>
@@ -221,9 +221,8 @@ border-top:2px solid #2ecc71;
 		$(".t"+dy).css({"background-color":"#42A5F5" ,"color":"#ccc"});		
 		if(d.getDate()==26 && d.getMonth()==0){
 			$("body").css({"background":" linear-gradient( #FF9933 , #fff, #138808)","background-repeat":"no"});
-			$("#info").html("<font color=#FF9933>HAPPY</font><font color='#fff'> REPUBLIC</font><font color='#138808'> DAY !!!!</font>")
-			$("#rd").text('<a href="" style="color:white;font-size:3em" class="typewrite" data-period="2000" data-type='[ "Happy Republic Day.", " 26 January.", "69<sup>th</sup> Republic Day ." ]'>
-    <span class="wrap"></span></a>');
+			$("#info").html("<font color=#FF9933>HAPPY</font><font color='#fff'> REPUBLIC</font><font color='#138808'> DAY !!!!</font>");
+			$("#rd").html('<a href="" style="color:white;font-size:3em;font-weight:bold" class="typewrite" data-period="2000" data-type=\'[ "Happy Republic Day.", " 26 January.", "69<sup>th</sup> Republic Day ."]\'><span class="wrap"></span></a><br/><br/>');
 		}
 		else if (dy==0){
 			$("#info").text("Sunaday is always Holiday !!");
