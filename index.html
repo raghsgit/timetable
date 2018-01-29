@@ -56,31 +56,34 @@
 	a:hover{
 		text-decoration: none;
 		color: #e74c3c;
+	}	
+	#sep{
+		position:absolute;
+		border-top:2px solid #2ecc71;
+		width:30px;
+		transform: rotate(70deg);
+		transform-origin: 10% 50%;
 	}
-		
-		
-		
-		
-#sep{position:absolute;
-border-top:2px solid #2ecc71;
-  width:30px;
-  transform: rotate(70deg);
-  transform-origin: 10% 50%;
-}
-		
+	.top{
+		border:0;
+		border-top:1px solid #e6b0aa;
+		width:65%;
+		min-width:50px;
+		margin:2px auto 2px auto;
+	}	
 	</style>
 </head>
 <body>
 	<center>
-	<div style="max-width:1200px">
+	<marquee style="width:75%;min-width:450px;font-size: 15px;color:red;">This is the latest version of class-schedule</marquee>
+	<div style="max-width:1300px">
 		<div id ="rd" style="width:100%"></div>
 		<div id="inf" style="width:100% "><span id="info" style="font-weight: bold"></span><a href="cs_syllabus" download style="margin-right: 15px;float: right">View Syllabus</a></div>
 		<div style="width: 100%">
 		<table id="tb1" style="width: 100%">
 			<thead>
 			<tr>
-				<th style="padding-left:18px;
-		padding-right: 18px;">Day<span id="sep"></span>&nbsp;&nbsp; Period</th>
+				<th style="padding-left:18px;padding-right: 18px;">Day<span id="sep"></span>&nbsp;&nbsp; Period</th>
 				<th>I<br/>9:10-10:00</th>
 				<th>II<br/>10:00-10:50</th>
 				<th>III<br/>10:50-11:40</th>
@@ -94,8 +97,8 @@ border-top:2px solid #2ecc71;
 			<tbody>
 			<tr>
 				<td class="t1">Monday</td>
-				<td class="t11">cs-067(t1) <wbr><span>cs-210</span><br/>cs-069(t1) <wbr><span>Lt-15</span></td>
-				<td class="t12">cs-067 <wbr><span>cs-210</span><br/>cs-069 <wbr><span>Lt-15</span></td>
+				<td class="t11">cs-067(t1) <wbr><span>cs-210</span><br/><hr class="top">cs-066(t1) <wbr>Lt-15</td>
+				<td class="t12">cs-067 <wbr><span>cs-210</span><br/><hr class="top">cs-066 <wbr>Lt-15</td>
 				<td colspan="2" class="t13 t14">-----cs-603-----<br/><span>Lt-15</span></td>
 				<td id="lunch"></td>
 				<td class="t15">cs-602(t2)<br/><span>cs-210</span></td>
@@ -103,26 +106,27 @@ border-top:2px solid #2ecc71;
 			</tr>
 			<tr>
 				<td class="t2">Tuesday</td>
-				<td colspan="2" class="t21 t22">-----cs-062-----<br/><span>cs-210</span></td>
-				<td colspan="2" class="t23 t24">cs-654<span>(cs-1)</span><br/>cs-653<span>(cs-2)</span></td>
+				<td colspan="2" class="t21 t22">cs-062 <wbr/><span>cs-210</span><br/><hr class="top">cs-065 <wbr/>Lt-14</td>
+				<td colspan="2" class="t23 t24">cs-654<span>(cs-1)</span><br/><hr class="top">cs-653(cs-2)</td>
 				<td id="lunch"></td>
-				<td colspan="3" class="t25 t26 t27">cs-651<span>(cs-1)</span><br/>cs-652<span>(cs-2)</span></td>
+				<td colspan="2" class="t25 t26">cs-654<span>(cs-2)</span><br/><hr class="top">cs-653(cs-1)</td>
+				<td  class="t27" id="holi">XXXXXXX</td>
 			</tr>
 			<tr>
 				<td class="t3">Wednesday</td>
-				<td class="t31">cs-067(t2) <wbr><span>cs-210</span><br/>cs-069(t2) <wbr><span>cs-312</span></td>
-				<td class="t32">cs-067 <wbr><span>cs-210</span><br/>cs-069 <wbr><span>cs-312</span></td>
+				<td class="t31">cs-067(t2) <wbr><span>cs-210</span><br/><hr class="top">cs-066(t2) <wbr>cs-312</td>
+				<td class="t32">cs-067 <wbr><span>cs-210</span><br/><hr class="top">cs-066 <wbr>cs-312</td>
 				<td colspan="2" class="t33 t34">-----cs-602-----<br/><span>Lt-25</span></td>
 				<td id="lunch" ></td>
-				<td colspan="3" class="t35 t36 t37">cs-652<span>(cs-1)</span><br/>cs-651<span>(cs-2)</span></td>
+				<td colspan="3" class="t35 t36 t37">cs-652<span>(cs-1)</span><br/><hr class="top">cs-651(cs-2)</span></td>
 			</tr>
 			<tr>
 				<td class="t4">Thursday</td>
 				<td class="t41">cs-602(t2)<br/><span>cs-210</span></td>
 				<td class="t42">cs-602<br/><span>cs-210</span></td>
-				<td colspan="2" class="t43 t44">cs-653<span>(cs-1)</span><br/>cs-654<span>(cs-2)</span></td>
+				<td colspan="2" class="t43 t44" id="holi">XXXXXXX</td>
 				<td id="lunch"></td>
-				<td class="t45">cs-603<br/><span>Lt-15(t2)</span></td>
+				<td class="t45">cs-603(t2)<br/><span>Lt-15</span></td>
 				<td colspan="2" class="t46 t47" id="holi">XXXXXXX</td>
 			</tr>
 			<tr>
@@ -143,7 +147,7 @@ border-top:2px solid #2ecc71;
 				<td class="t63">cs-062(t2)<br/><span>Lt-14</span></td>
 				<td class="t64">cs-601(t2)<br/><span>Lt-14</span></td>
 				<td id="lunch"></td>
-				<td colspan="3" class="t65 t66 t67" id="holi">XXXXXXX</td>
+				<td colspan="3" class="t65 t66 t67">cs-651<span>(cs-1)</span><br/><hr class="top">cs-652(cs-2)</td>
 			</tr>
 		</tbody>
 		</table>
